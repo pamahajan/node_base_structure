@@ -1,0 +1,29 @@
+{
+  "name": "node_base_strcutre",
+  "version": "1.0.0",
+  "description": "node base levek project strcuture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js | node_modules/bunyan/bin/bunyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pamahajan/node_base_structure.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "parth mahajan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pamahajan/node_base_structure/issues"
+  },
+  "homepage": "https://github.com/pamahajan/node_base_structure#readme",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "koa": "^2.3.0",
+    "lodash": "^4.17.4",
+    "mongoose": "4.10.0"
+  }
+}
