@@ -13,6 +13,15 @@ module.exports = {
     options: {
       debug: false
     },
+    connect: false
+  }, mssql: {
+    user: 'developer',
+    password: 'dev',
+    server: '10.10.70.71'
+    database: 'WinRX',
+    options: {
+      encrypt: true
+    },
     connect: true
   }
 };

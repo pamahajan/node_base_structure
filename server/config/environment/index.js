@@ -34,6 +34,21 @@ const all = {
   },
 
   /**
+   * Modules Path
+   */
+  module: {
+    root: path.join(__dirname, './../../modules'),
+    user: path.join(__dirname, './../../modules/user')
+  },
+
+  /**
+   * Connections Path
+   */
+
+  connection: {
+    mssql: path.join(__dirname, './../connections/mssql.connection')
+  },
+  /**
   * Logs Configuration
   */
 

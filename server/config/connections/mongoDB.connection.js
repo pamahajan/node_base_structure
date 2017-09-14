@@ -10,7 +10,7 @@ const mongoose = require('mongoose'),
  */
 mongoose.Promise = bluebird;
 
-module.exports = () => {
+module.exports.connect = () => {
 
   l.info('Connecting to MongoDB');
   /**
