@@ -16,8 +16,9 @@ exp.connect = () => {
       user: config.mssql.user,
       password: config.mssql.password,
       server: config.mssql.server,
-      database: config.mssql.database
+      database: config.mssql.database,
     };
+    
     console.log(sqlConfig);
     sql.on('error', err => {
       l.error('File: SQL Connection, SQL connection Error, Err --> ', err);
@@ -30,8 +31,18 @@ exp.connect = () => {
       l.info('Connection Established with sql')
     });
 
+    sql.on('error', err => {
+      if(err)
+        l.error('Connection Error', err);
+      l.info('Connection Established with sql')
+    });
+  
     let pool = new sql.ConnectionPool(sqlConfig);
-    pool.connect();
+    pool.connect().then(()=> {
+      console.log('here')
+    }).catch((err) => {
+      console.log(err);
+    });
     exp.pool = pool;
 
     l.info('Connection Established');

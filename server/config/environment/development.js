@@ -15,13 +15,27 @@ module.exports = {
     },
     connect: false
   }, mssql: {
-    user: 'developer',
-    password: 'dev',
-    server: '10.10.70.71',
-    database: 'WinRX',
+    // user: 'Administrator',
+    // password: '..bV6q3%5v6',
+    user: "sab",
+    password: "dev@1",
+    server: '35.158.25.199\\WIN-7GC68C9O3UF',
+    database: 'WINRX',
     options: {
       encrypt: true,
     },
     connect: true
-  }
+  }, 
 };
+
+// mssql: {
+//   user: 'developer',
+//   password: 'dev',
+//   server: '10.10.70.71',
+//   database: 'WinRX',
+//   options: {
+//     encrypt: true,
+//   },
+//   connect: true
+// }
+
